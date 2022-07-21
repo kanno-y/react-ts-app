@@ -1,0 +1,61 @@
+[debug] [2022-07-21T23:30:27.016Z] ----------------------------------------------------------------------
+[debug] [2022-07-21T23:30:27.018Z] Command:       /Users/kanno/.nodebrew/node/v16.13.2/bin/node /usr/local/bin/firebase init
+[debug] [2022-07-21T23:30:27.019Z] CLI Version:   11.3.0
+[debug] [2022-07-21T23:30:27.019Z] Platform:      darwin
+[debug] [2022-07-21T23:30:27.019Z] Node Version:  v16.13.2
+[debug] [2022-07-21T23:30:27.031Z] Time:          Fri Jul 22 2022 08:30:27 GMT+0900 (日本標準時)
+[debug] [2022-07-21T23:30:27.032Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-21T23:30:27.038Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-21T23:30:27.039Z] > authorizing via signed-in user (kanno0521@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/kanno/workspace/react-ts-app
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-07-21T23:30:59.679Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2022-07-21T23:31:00.609Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2022-07-21T23:31:00.609Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project react-ts-app-c0679 (react-ts-app) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2022-07-21T23:31:18.316Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2022-07-21T23:31:18.494Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2022-07-21T23:31:18.494Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.9.0","browserURL":"https://www.gstatic.com/firebasejs/9.9.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.9.0/firebase.tgz"},"live":{"version":"9.9","browserURL":"https://www.gstatic.com/firebasejs/live/9.9/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.9/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.9.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.9.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.9.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.9.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.9.0/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.9.0/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.9.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.9.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.9.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/9.9.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/9.9.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.9.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.9.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.9.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.9.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.9.0/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.9.0/firebase-firestore.memory.js"}}
+[info] ✔  Wrote public/index.html 
+[info] 
+[info] i  Detected a .git folder at /Users/kanno/workspace/react-ts-app 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=319597025&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2022-07-21T23:31:34.446Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2022-07-21T23:31:34.446Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2022-07-21T23:31:34.825Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2022-07-21T23:31:34.825Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2022-07-21T23:31:34.843Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2022-07-21T23:31:35.258Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2022-07-21T23:31:35.259Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"kanno-y","id":54009743,"node_id":"MDQ6VXNlcjU0MDA5NzQz","avatar_url":"https://avatars.githubusercontent.com/u/54009743?v=4","gravatar_id":"","url":"https://api.github.com/users/kanno-y","html_url":"https://github.com/kanno-y","followers_url":"https://api.github.com/users/kanno-y/followers","following_url":"https://api.github.com/users/kanno-y/following{/other_user}","gists_url":"https://api.github.com/users/kanno-y/gists{/gist_id}","starred_url":"https://api.github.com/users/kanno-y/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/kanno-y/subscriptions","organizations_url":"https://api.github.com/users/kanno-y/orgs","repos_url":"https://api.github.com/users/kanno-y/repos","events_url":"https://api.github.com/users/kanno-y/events{/privacy}","received_events_url":"https://api.github.com/users/kanno-y/received_events","type":"User","site_admin":false,"name":"kanno-y","company":null,"blog":"","location":"Japan","email":null,"hireable":null,"bio":"hello!!","twitter_username":null,"public_repos":20,"public_gists":0,"followers":2,"following":4,"created_at":"2019-08-12T00:26:13Z","updated_at":"2022-07-13T12:20:15Z","private_gists":0,"total_private_repos":5,"owned_private_repos":5,"disk_usage":60389,"collaborators":1,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] ✔  Success! Logged into GitHub as kanno-y 
+[info] 
