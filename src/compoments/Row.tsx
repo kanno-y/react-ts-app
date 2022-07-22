@@ -1,5 +1,7 @@
 import axios from "../axios";
 import { useEffect, useState } from "react";
+import "./Row.scss";
+import { baseUrl as base_url } from "../request";
 
 type Props = {
   title: string;
@@ -29,6 +31,24 @@ export const Row = ({ title, fetchUrl }: Props) => {
   }, [fetchUrl]);
 
   console.log(movies);
+  const isLargeRow = true;
 
-  return <div className="Row" />;
+  return (
+    <div className="Row">
+      <h2>{title}</h2>
+      <div className="Row-posters">
+        {/* ポスターコンテンツ */}
+        {movies.map((movie, i) => (
+          <img
+            key={movie.id}
+            className={`Row-poster ${isLargeRow && "Row-poster-large"}`}
+            src={`https://image.tmdb.org/t/p/w500/${
+              isLargeRow ? movie.poster_path : movie.backdrop_path
+            }`}
+            alt={movie.name}
+          />
+        ))}
+      </div>
+    </div>
+  );
 };

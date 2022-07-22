@@ -1,5 +1,7 @@
 const API_KEY = "6b1515eba34c8b10aa4eb45bc77e85ba"; // TMDBのAPIKeyを入れる
 
+export const baseUrl = "https://api.themoviedb.org/3";
+
 export const requests = {
   feachTrending: `/trending/all/week?api_key=${API_KEY}&language=en-us`,
   feachNetflixOriginals: `/discover/tv?api_key=${API_KEY}&with_networks=213`,
