@@ -2,10 +2,12 @@ import React from "react";
 import { Row } from "./compoments/Row";
 import { requests } from "./request";
 import { Banner } from "./compoments/Banner/index";
+import { Nav } from "./compoments/Nav";
 
 function App() {
   return (
     <div className="App">
+      <Nav />
       <Banner />
       <Row
         title="NETFLIX ORIGUINALS"
