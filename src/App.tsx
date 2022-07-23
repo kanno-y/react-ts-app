@@ -1,10 +1,12 @@
 import React from "react";
 import { Row } from "./compoments/Row";
 import { requests } from "./request";
+import { Banner } from "./compoments/Banner/index";
 
 function App() {
   return (
     <div className="App">
+      <Banner />
       <Row
         title="NETFLIX ORIGUINALS"
         fetchUrl={requests.feachNetflixOriginals}

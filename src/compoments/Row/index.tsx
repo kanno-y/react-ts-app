@@ -1,7 +1,7 @@
-import axios from "../axios";
 import { useEffect, useState } from "react";
-import "./Row.scss";
-import { baseUrl as base_url } from "../request";
+import "./index.scss";
+// import { baseUrl as base_url } from "../../request";
+import axios from "../../axios";
 
 type Props = {
   title: string;
