@@ -1,4 +1,4 @@
-const API_KEY = "6b1515eba34c8b10aa4eb45bc77e85ba"; // TMDBのAPIKeyを入れる
+export const API_KEY = "6b1515eba34c8b10aa4eb45bc77e85ba"; // TMDBのAPIKeyを入れる
 
 export const baseUrl = "https://api.themoviedb.org/3";
 
